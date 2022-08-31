@@ -112,8 +112,8 @@ a:visited{
     align-items: center;
     justify-content: center;
 }
-    .checkBox{
-        display: none;
+.checkBox{
+    display: none;
 }
 .search {
 display: flex;
