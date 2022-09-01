@@ -155,11 +155,11 @@
     "empty1 gridG empty2"
     "empty1 gridH empty2";
     grid-template-columns: 5vw 90VW 5vw;
-    grid-template-rows: 30vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh ;
+    grid-template-rows: 35vh 50vh 40vh 50vh 40vh 35vh 48vh 35vh;
     font-family: "Montserrat", "sans-serif";
     }
     .gridContainer{
-        padding-top: 15vh;
+        padding-top: 5vh;
     }
     .gridContainer .gridA {
     grid-area: gridA;
@@ -199,6 +199,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-top: 10vh;
     }
     .gridContainer .gridC img {
     width: 90vw;
@@ -230,6 +231,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-top: 10vh;
     }
     .gridContainer .gridE img {
     width: 90vw;
@@ -261,6 +263,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-top: 10vh;
     }
     .gridContainer .gridG img {
     width: 90vw;
