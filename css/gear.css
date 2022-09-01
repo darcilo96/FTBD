@@ -1,0 +1,322 @@
+@media (min-width:1440px){
+*{
+    padding: 0;
+    border:0;
+    margin:0;
+}
+.navBar{
+    display: flex;
+    justify-content: space-around;
+    width: 75vw;
+    padding-top: 1em;
+}
+div.container {
+display: flex;
+background-color: rgb(18, 31, 31);
+align-items: stretch;
+justify-content: space-around;
+align-content: center;
+height: 25vh;
+}
+.pageBrand {
+width: 15vw;
+padding-top: 2vh;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 20vh;
+}
+.mainMenu{
+    display: flex;
+    padding-right: 3vw;
+    justify-content: center;
+    align-items: center;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    padding:1em;
+    font-family: 'montserrat','sans-serif';
+    font-size: 1.5em;
+}
+.lblCheckBox,.checkBox{
+    display: none;
+}
+div.container .pageBrand a img {
+width: 15vw;
+padding-left: 6em;
+}
+div.container .navBar {
+width: 100vw;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+div.container .navBar .checkBox {
+display: none;
+}
+div.container .navBar ul li a:link {
+color: #EFEFEF;
+}
+div.container .navBar ul li a:visited {
+color: #EFEFEF;
+}
+div.container .navBar ul li a:hover {
+color: #FEAF37;
+transition: 0.4s;
+}
+.search {
+display: flex;
+align-items: center;
+justify-content: space-between;
+text-align: center;
+padding-right: 2em;
+}
+.search__input {
+font-family: "Montserrat", sans-serif;
+font-size: inherit;
+background-color: #EFEFEF;
+border: none;
+color: darkslategray;
+padding: 0.7rem 1rem;
+border-radius: 30px;
+width: 15vw;
+height: 1em;
+transition: all ease-in-out 0.5s;
+margin-right: -2rem;
+}
+.search__input:hover, .search__input:focus {
+box-shadow: 0 0 1em rgb(114, 197, 197);
+}
+.search__input:focus {
+outline: none;
+background-color: #f0eeee;
+border-color: #F66B0E;
+}
+.search__input::-webkit-input-placeholder {
+font-weight: 100;
+color: rgb(90, 87, 87);
+}
+.search__input:focus + .search__button {
+background-color: #f0eeee;
+}
+.search__button {
+border: none;
+background-color: transparent;
+margin-top: 0.1em;
+}
+.search__button:hover {
+cursor: pointer;
+}
+.search__icon {
+height: 1.3em;
+width: 1.3em;
+fill: rgb(90, 87, 87);
+}
+.gridContainer {
+background: linear-gradient(to bottom, rgb(18, 31, 31), rgb(25, 25, 25));
+display: grid;
+grid-template-areas: 
+"empty1 gridA  empty3 gridC  empty2"
+"empty1 gridB  empty3 gridD  empty2" 
+"empty1 empty4 empty3 empty5 empty2" 
+"empty1 gridE  empty3 gridG  empty2" 
+"empty1 gridF  empty3 gridH  empty2";
+grid-template-columns: 14vw 34vw 2vw 34vw 14vw;
+grid-template-rows: 69vh 43vh 5vh 70vh 35vh;
+font-family: "Montserrat", "sans-serif";
+}
+.gridContainer .gridA {
+grid-area: gridA;
+padding-top: 2vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.gridContainer .gridA img {
+width: 34vw;
+border-radius: 30px 30px 0px 0px;
+}
+.gridContainer .gridB {
+grid-area: gridB;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+background-color: #EFEFEF;
+border-radius: 0 0 20px 20px;
+}
+.gridContainer .gridB h2 {
+color: rgb(25, 25, 25);
+text-align: center;
+padding-top: 0.5em;
+font-family: "bebas neue", "sans-serif";
+font-size: 2em;
+}
+.gridContainer .gridB p {
+text-align: justify;
+padding: 0 1em 0 1em;
+color: rgb(25, 25, 25);
+}
+.gridContainer .gridC {
+grid-area: gridC;
+padding-top: 2vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.gridContainer .gridC img {
+width: 34vw;
+border-radius: 30px 30px 0px 0px;
+}
+.gridContainer .gridD {
+grid-area: gridD;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+background-color: #EFEFEF;
+border-radius: 0 0 20px 20px;
+}
+.gridContainer .gridD h2 {
+color: rgb(25, 25, 25);
+text-align: center;
+padding-top: 0.5em;
+font-family: "bebas neue", "sans-serif";
+font-size: 2em;
+}
+.gridContainer .gridD p {
+text-align: justify;
+padding: 0 1em 0 1em;
+color: rgb(25, 25, 25);
+}
+.gridContainer .gridE {
+grid-area: gridE;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.gridContainer .gridE img {
+width: 34vw;
+border-radius: 30px 30px 0px 0px;
+}
+.gridContainer .gridF {
+grid-area: gridF;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+background-color: #EFEFEF;
+border-radius: 0 0 20px 20px;
+}
+.gridContainer .gridF h2 {
+color: rgb(25, 25, 25);
+text-align: center;
+padding-top: 0.5em;
+font-family: "bebas neue", "sans-serif";
+font-size: 2em;
+}
+.gridContainer .gridF p {
+text-align: justify;
+padding: 0 1em 0 1em;
+color: rgb(25, 25, 25);
+}
+.gridContainer .gridG {
+grid-area: gridG;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.gridContainer .gridG img {
+width: 34vw;
+border-radius: 30px 30px 0px 0px;
+}
+.gridContainer .gridH {
+grid-area: gridH;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+background-color: #EFEFEF;
+border-radius: 0 0 20px 20px;
+}
+.gridContainer .gridH h2 {
+color: rgb(25, 25, 25);
+text-align: center;
+padding-top: 0.5em;
+font-family: "bebas neue", "sans-serif";
+font-size: 2em;
+}
+.gridContainer .gridH p {
+text-align: justify;
+padding: 0 1em 0 1em;
+color: rgb(25, 25, 25);
+}
+
+.footerContainer {
+height: 15vh;
+display: flex;
+justify-content: space-around;
+align-items: center;
+background-color: rgb(25, 25, 25);
+}
+
+.button {
+font-family: "Montserrat", sans-serif;
+font-weight: 400;
+background: rgb(25, 25, 25);
+color: white;
+padding: 0.35em 0;
+font-size: 17px;
+border: none;
+border-radius: 0.7em;
+letter-spacing: 0.08em;
+position: relative;
+display: flex;
+align-content: center;
+align-items: center;
+overflow: hidden;
+height: 2.1em;
+padding-left: 3em;
+padding-right: 0.7em;
+}
+
+.button .icon {
+background: #fff;
+margin-right: 1em;
+height: 2.2em;
+width: 2.2em;
+border-radius: 0.5em;
+position: absolute;
+display: flex;
+align-items: center;
+justify-content: center;
+left: 0.3em;
+transition: all 0.7s;
+}
+
+.shere {
+width: 1.3rem;
+height: 1.3rem;
+margin-left: 4px;
+}
+
+.button:hover .icon {
+width: calc(100% - 0.6rem);
+}
+
+.button:hover .shere {
+width: calc(100% - 0.6rem);
+display: none;
+}
+
+.button .icon-shere {
+color: rgb(25, 25, 25);
+width: 1.5rem;
+height: 1.5rem;
+display: none;
+padding: 0 0.5vw 0 0.5vw;
+}
+
+.button:hover .icon .icon-shere {
+display: flex;
+}
+}
