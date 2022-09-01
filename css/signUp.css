@@ -1,3 +1,352 @@
+@media (min-width:320px) and (max-width:767px){
+
+    *{
+        padding: 0;
+        border: 0;
+        margin:0;
+    }
+    .container{
+        background-color: rgb(18, 31, 31);
+        height: 15vh;
+        width: 100%;
+    }
+    .checkBox{
+        display: none;
+    }
+    .navBar{
+        width: 100%;
+    }
+    .pageBrand{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        position: absolute;
+        width: 100vw;
+        padding-left: 1vw;
+        padding-top: 2vh;
+        height:10vh;
+    }
+    .lblCheckBox{
+        position: absolute;
+        top: 1em;
+        right:1em;
+        filter: invert(1);
+        cursor:pointer;
+        z-index: 1;
+    }
+    .mainMenu{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        background-color: rgb(18, 31, 31);
+        transform: translateY(-100%);
+        transition: 0.5s;
+        z-index: 1;
+        width: 100%;
+    }
+    .hamburguer:hover{
+        filter:invert(0);
+        transition: 0.5s;
+    }
+    ul{
+        padding:1em;
+    }
+    li{
+        list-style: none;
+        padding: 1em;
+    }
+    a{
+        text-decoration: none;
+        font-size: 0.8em;
+        font-family: 'montserrat','sans-serif';
+    }
+    a:link{
+        color:white;
+    }
+    a:visited{
+        color:white;
+    }
+    .checkBox:checked + .mainMenu{
+        transform: translateY(28%);
+        transition: 0.5s;
+    }
+    .navBar{
+        width: 60vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .checkBox{
+        display: none;
+    }
+    .search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding-right: 2em;
+    z-index: 0;
+    }
+    
+    .search__input {
+    font-family:'Montserrat', sans-serif;
+    font-size: inherit;
+    background-color: #f4f2f2;
+    border: none;
+    color:darkslategray;
+    padding: 0.7rem 1rem;
+    border-radius: 30px;
+    width: 25vw;
+    height: 1em;
+    top:2em;
+    right: 8em;
+    position: absolute;
+    transition: all ease-in-out .5s;
+    margin-right: -2rem;
+    }
+    
+    .search__input:hover, .search__input:focus {
+    box-shadow: 0 0 1em rgb(114, 197, 197);
+    }
+    
+    .search__input:focus {
+    outline: none;
+    background-color: #f0eeee;
+    border-color: #F66B0E;
+    }
+    
+    .search__input::-webkit-input-placeholder {
+    font-weight: 100;
+    color: rgb(90, 87, 87);
+    }
+    
+    .search__input:focus + .search__button {
+    background-color: #f0eeee;
+    }
+    
+    .search__button {
+    border: none;
+    background-color: transparent;
+    margin-top: 0.1em;
+    position:absolute;
+    top:3em;
+    right:9em;
+    }
+    
+    .search__button:hover {
+    cursor: pointer;
+    }
+    
+    .search__icon {
+    height: 1.3em;
+    width: 1.3em;
+    fill: rgb(90, 87, 87);
+    }
+    .gridContainer {
+        background: linear-gradient(to bottom, rgb(18, 31, 31), rgb(25, 25, 25));
+        display: grid;
+        grid-template-areas: 
+        "gridA gridB gridE" 
+        "gridA gridD gridE" 
+        "gridA gridC gridE" 
+        "gridA gridF gridE";
+        grid-template-columns: 5vw 45vw 45vw 5vw;
+        grid-template-rows: 5vh 35vh 40vh;
+        color: #EFEFEF;
+        }
+        .gridContainer .gridA {
+        grid-area: gridA;
+        display: flex;
+        }
+        .gridContainer .gridB {
+        grid-area: gridB;
+        display: flex;
+        }
+        .gridContainer .gridC {
+        grid-area: gridC;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 90vw;
+        }
+        .gridContainer .gridC h1 {
+        font-family: "bebas neue", "sans-serif";
+        font-size: 2em;
+        color: #FEAF37;
+        text-align: center;
+        }
+        .gridContainer .gridC p {
+        font-family: "montserrat", "sans-serif";
+        text-align:start;
+        }
+        .gridContainer .gridD {
+        grid-area: gridD;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 2em;
+        background-color: #EFEFEF;
+        width: 90vw;
+        }
+        .gridContainer .gridD .login {
+        display: flex;
+        flex-direction: row;
+        font-family: "montserrat", "sans-serif";
+        }
+        .gridContainer .gridD .login .labels {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 1em;
+        line-height: 2.5em;
+        color: rgb(18, 31, 31);
+        }
+        .gridContainer .gridD .login .inputs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1em 0 0 1em;
+        width: 50vw;
+        }
+        .gridContainer .gridD .login .inputs input {
+        height: 2em;
+        border-radius: 1em;
+        padding-left: 1em;
+        font-family: "montserrat", "sans-serif";
+        height: 3.5vh;
+        }
+        .gridContainer .gridD .googleAccess {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 8vh;
+        font-family: "montserrat", "sans-serif";
+        }
+        .gridContainer .gridD .googleAccess .forgotPwd {
+        color: rgb(25, 25, 25);
+        }
+        .gridContainer .gridD .googleAccess .forgotPwd a {
+        font-size: 0.5em;
+        text-decoration: none;
+        }
+        .gridContainer .gridD .googleAccess .forgotPwd a:link {
+        color: rgb(18, 31, 31);
+        }
+        .gridContainer .gridD .googleAccess .forgotPwd a:visited {
+        color: rgb(18, 31, 31);
+        }
+        .gridContainer .gridD .googleAccess .forgotPwd a:hover {
+        color: #FEAF37;
+        transition: 0.4s;
+        }
+        .gridContainer .gridD button {
+        padding: 1.3em 3em;
+        font-size: 12px;
+        font-family: "montserrat", "sans-serif";
+        font-weight: bolder;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        font-weight: 500;
+        color: #000;
+        background-color: #fff;
+        border: none;
+        border-radius: 45px;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        outline: none;
+        }
+        .gridContainer .gridD button:hover {
+        background-color: #FEAF37;
+        box-shadow: 0px 15px 20px rgba(254, 175, 55, 0.4);
+        color: #fff;
+        transform: translateY(-0.2em);
+        }
+        .gridContainer .gridD button:active {
+        transform: translateY(-1px);
+        }
+        .gridContainer .gridE {
+        grid-area: gridE;
+        display: flex;
+        }
+        .gridContainer .gridF {
+        grid-area: gridF;
+        display: flex;
+        }
+        
+        .footerContainer {
+        height: 15vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgb(25, 25, 25);
+        }
+        
+        .button {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        background: rgb(25, 25, 25);
+        color: white;
+        padding: 0.35em 0;
+        font-size: 17px;
+        border: none;
+        border-radius: 0.7em;
+        letter-spacing: 0.08em;
+        position: relative;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        overflow: hidden;
+        height: 2.1em;
+        padding-left: 3em;
+        padding-right: 0.7em;
+        }
+        
+        .button .icon {
+        background: #fff;
+        margin-right: 1em;
+        height: 2.2em;
+        width: 2.2em;
+        border-radius: 0.5em;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: 0.3em;
+        transition: all 0.7s;
+        }
+        
+        .shere {
+        width: 1.3rem;
+        height: 1.3rem;
+        margin-left: 4px;
+        }
+        
+        .button:hover .icon {
+        width: calc(100% - 0.6rem);
+        }
+        
+        .button:hover .shere {
+        width: calc(100% - 0.6rem);
+        display: none;
+        }
+        
+        .button .icon-shere {
+        color: rgb(25, 25, 25);
+        width: 1.5rem;
+        height: 1.5rem;
+        display: none;
+        padding: 0 0.5vw 0 0.5vw;
+        }
+        
+        .button:hover .icon .icon-shere {
+        display: flex;
+        }
+}
+@media (min-width:1440px){
 *{
     padding: 0;
     border:0;
@@ -117,7 +466,11 @@ fill: rgb(90, 87, 87);
 .gridContainer {
 background: linear-gradient(to bottom, rgb(18, 31, 31), rgb(25, 25, 25));
 display: grid;
-grid-template-areas: "gridA gridB gridB gridE" "gridA gridC gridD gridE" "gridA gridC gridD gridE" "gridA gridF gridF gridE";
+grid-template-areas: 
+"gridA gridB gridB gridE" 
+"gridA gridC gridD gridE" 
+"gridA gridC gridD gridE" 
+"gridA gridF gridF gridE";
 grid-template-columns: 15vw 35vw 35vw 15vw;
 grid-template-rows: 10vh 15vh 25vh 25vh;
 color: #EFEFEF;
@@ -307,4 +660,5 @@ padding: 0 0.5vw 0 0.5vw;
 
 .button:hover .icon .icon-shere {
 display: flex;
+}
 }
